@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>My Top 5 Favorite Artists or Sports Figures</h1>
+    <ul>
+        {% for figure in favorite_figures %}
+        <li>{{ figure }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('favorite') }}">Go to Favorite Page</a></p>
+</body>
+</html>
